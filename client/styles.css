@@ -6,29 +6,26 @@
 /* 1st Background- #2F19A9, 2nd color for divs-#EB475F */
 body{
     font-family: 'Cairo', sans-serif;
-    background-color: #160C6E;
+    background: linear-gradient(#EB475F,#2F19A9);
 }
 .heading{
-    background-color: #EB475F;
     color : #fff;
-    padding: 15rem;
+    padding: 8rem;
     text-align: center;
 }
 .row{
-    background-color: #2F19A9;
-    padding-top: 3rem;
-    padding-bottom: 3rem;;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
 }
 .card{
     width:18rem;
     text-align:center;
     margin: 0 auto;
     background-color: #EB475F;
-    height: 25vh;
+    height: 32vh;
+    border-radius: 1rem;
 }
-.card-main{
-    background-color: #2F19A9;
-}
+
 .card-title{
     font-size: 3rem;
     color: #fff;
@@ -36,10 +33,10 @@ body{
     display:block;
     margin: 0 auto;
     -webkit-text-stroke: 1px #2F19A9;
-    text-shadow: 0px 2px 4px blue;
+    text-shadow: 0px 2px 4px #160C6E;
     padding-top: 6px;
     padding-bottom:6px;
-    max-width: 14rem;
+    max-width: 15rem;
 }
 .card-img-top{
     width: 4rem;
@@ -48,9 +45,10 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.card p{
+.card-text{
     color: #fff;
 }
+
 .btn-custom{
     background-color: #160C6E;
     color:#fff;
@@ -65,3 +63,30 @@ body{
     margin: 3rem auto;
     display:block;
 }
+
+
+/* HR Section */
+.accessory {
+    height: 6px;
+    background-image: radial-gradient(
+      closest-side,
+      rgb(209, 15, 15),
+      hsla(0, 85%, 43%, 0) 100%);
+    position: relative;
+  }
+  .accessory:after {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    display:block;
+    background-color: hsl(0, 0%, 75%);
+    height: 12px;
+    width:  12px;
+    transform: rotate(45deg);
+    margin-top:  -10px;
+    margin-left: -10px;
+    border-radius: 4px 0;
+    border: 4px solid hsla(0, 0%, 100%, 0.35);
+    background-clip: padding-box;
+    box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+  }
