@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Covid Live Tracker</title>
+</head>
+<body>
+    <!-- Main Heading with Content on different sections -->
+    <div class="heading">
+        <h1>Covid Live Tracker</h1>
+        <form class="show-stats">
+            <input type="text" name="state" class="state-in" placeholder="Enter the state" />
+            <button class="btn btn-custom" type="submit">Show stats</button>
+        </form>
+    </div>
+    <!-- Card's Section -->
+    <div class="row">
+        <div class="col-lg-4 card-main">
+            <div class="card">
+                <h5 class="card-title">Confirmed Cases</h5>
+                <img class="card-img-top" src="./images/covid-19.png" alt="Confirmed">
+                <div class="card-body">
+                  <p class="card-text">Confirmed</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 card-main">
+            <div class="card">
+                <h5 class="card-title">Recovered Cases</h5>
+                <img class="card-img-top" src="./images/recovered.png" alt="Recovered" />
+                <div class="card-body">
+                  <p class="card-text">Recovered</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 card-main">
+            <div class="card">
+                <h5 class="card-title">Deaths Cases</h5>
+                <img class="card-img-top" src="./images/grave.png" alt="Deaths">
+                <div class="card-body">
+                  <p class="card-text">Deaths</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+
+</html>

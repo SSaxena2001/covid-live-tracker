@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 1st Background- #2F19A9, 2nd color for divs-#EB475F */
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #160C6E;
+}
+.heading{
+    background-color: #EB475F;
+    color : #fff;
+    padding: 15rem;
+    text-align: center;
+}
+.row{
+    background-color: #2F19A9;
+    padding-top: 3rem;
+    padding-bottom: 3rem;;
+}
+.card{
+    width:18rem;
+    text-align:center;
+    margin: 0 auto;
+    background-color: #EB475F;
+    height: 25vh;
+}
+.card-main{
+    background-color: #2F19A9;
+}
+.card-title{
+    font-size: 3rem;
+    color: #fff;
+    font-weight:700;
+    display:block;
+    margin: 0 auto;
+    -webkit-text-stroke: 1px #2F19A9;
+    text-shadow: 0px 2px 4px blue;
+    padding-top: 6px;
+    padding-bottom:6px;
+    max-width: 14rem;
+}
+.card-img-top{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card p{
+    color: #fff;
+}
+.btn-custom{
+    background-color: #160C6E;
+    color:#fff;
+}
+.btn-custom:hover{
+    color:#EB475F;
+    background-color:#2F19A9;
+
+}
+.show-stats{
+    max-width: 30vw;
+    margin: 3rem auto;
+    display:block;
+}
