@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Covid Live Tracker</title>
 </head>
@@ -16,9 +17,10 @@
     <div class="heading jumbotron-fluid">
         <h1>Covid Live Tracker</h1>
         <form class="show-stats">
-            <input type="text" name="state" class="state-in" placeholder="Enter the state" />
+            <input type="text" name="state" class="state-in" placeholder="Enter the state" autocomplete="off" required />
             <button class="btn btn-custom" type="submit">Show stats</button>
         </form>
+        <h3 class="Not-found"></h3>
     </div>
     <!-- Card's Section -->
     <div class="row">
@@ -27,7 +29,7 @@
                 <h5 class="card-title">Confirmed Cases</h5>
                 <img class="card-img-top" src="./images/covid-19.png" alt="Confirmed">
                 <div class="card-body">
-                  <p class="card-text">Confirmed</p>
+                  <p class="card-text confirm"></p>
                 </div>
               </div>
               <hr class="accessory" />
@@ -37,22 +39,33 @@
                 <h5 class="card-title">Recovered Cases</h5>
                 <img class="card-img-top" src="./images/recovered.png" alt="Recovered" />
                 <div class="card-body">
-                  <p class="card-text">Recovered</p>
+                  <p class="card-text recovered"></p>
                 </div>
               </div>
               <hr class="accessory" />
         </div>
         <div class="col-lg-4 card-main">
             <div class="card">
-                <h5 class="card-title">Deaths Cases</h5>
+                <h5 class="card-title">Total Deaths</h5>
                 <img class="card-img-top" src="./images/grave.png" alt="Deaths">
                 <div class="card-body">
-                  <p class="card-text">Deaths</p>
+                  <p class="card-text deaths"></p>
                 </div>
               </div>
               <hr class="accessory" />
         </div>
     </div>
+    <footer>
+      <div class="foot-section">
+        <p><q>
+          <cite>
+            Few things in the world are more powerful than a positive push. A smile. A world of optimism and hope. All you can do it when things are tough.
+          </cite> 
+        </q>
+        -Albert Einstein
+      </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
-
 </html>

@@ -7,22 +7,13 @@ const morgan= require('morgan');
 const app = express();
 app.use(morgan());
 app.use(cors());
-app.use(express.json());
+app.use(express.static('public'));
 
-const uri= "https://api.rootnet.in/covid19-in/stats/latest";
 
-const getDailyData = async ()=>{
-    const response =await axios.get(uri);
-    const dailyData = response.data;
-    return dailyData;
-}
-
-app.get('/',async (req, res)=>{
-        const data = await getDailyData();
-        res.json(data);
+app.get('/',(req, res)=>{
+        res.sendFile(__dirname+'/index.html');
     }
 );      
-
 
 const port =process.env.PORT || 3000;
 app.listen(port, ()=>{
