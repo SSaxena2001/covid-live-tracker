@@ -4,7 +4,7 @@ const form = document.querySelector('form');
 const confirmed=document.querySelector(".confirm");
 const recovered=document.querySelector(".recovered");
 const deaths=document.querySelector(".deaths");
-const getData=async()=>{
+const getStateData=async()=>{
     fetch(uri)
     .then(response=>response.json())
     .then(data=>{
@@ -28,12 +28,13 @@ const getData=async()=>{
                         confirmed.innerHTML=state.totalConfirmed;
                         recovered.innerHTML=state.discharged;
                         deaths.innerHTML=state.deaths;
+                        document.querySelector(".Not-found").innerHTML="";
                     }
                 });
             }
             event.preventDefault();
-        })
-    })
+        });
+    });
 }
-getData();
+getStateData();
 
